@@ -1,0 +1,157 @@
+/* Reset conteúdo
+-------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Configuração geral
+---------------------*/
+body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 16px;
+	background: var(--paleblue-color) url('imagens/background.svg') no-repeat;
+}
+/* /Fim Configuração geral
+---------------------*/
+
+/* Var cores
+------------------ */
+:root {
+  --paleblue-color: hsl(225, 100%, 94%);
+  --brightblue-color: hsl(245, 75%, 52%);
+  --verypaleblue-color: hsl(225, 100%, 98%);
+  --desaturatedblue-color: hsl(224, 23%, 55%);
+  --darkblue-color: hsl(223, 47%, 23%);
+  --hover-color: hsl(245, 84%, 73%);
+}
+/* Fim var cores 
+----------------- */
+
+
+div#container {  
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* ------- Caixa principal  ------- */
+div#conteudo {
+	width: 450px;
+	text-align: center;
+	background: #ffffff;
+	border-radius: 15px;
+}
+
+#main {
+	margin: 0 auto;
+	width: 350px;
+}
+
+#imagem img {
+	border-radius: 15px 15px 0px 0px;
+}
+
+div#main header h2 {
+	font-weight: 900;
+	color: var(--darkblue-color);
+	line-height: 2.5;
+	font-weight: 900;
+}
+
+div#main header > p {
+	color: var(--desaturatedblue-color);
+	margin-bottom: 20px;
+}
+/* ------- /Fim caixa principal ------- */
+
+/* ------- Estilização caixa do valor ------- */
+div#valor {
+	border-radius: 15px;
+	background: var(--verypaleblue-color) url('imagens/icon-music.svg') no-repeat 5% center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+div#price {
+	margin: 10px 0px 10px 40px;
+}
+
+div#price h4 {
+	color: var(--darkblue-color);
+	font-weight: 900;
+}
+
+div#price p {
+	margin-top: 5px;
+	color: var(--desaturatedblue-color);
+}
+
+div#valor p#change {
+	color: var(--brightblue-color);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+div#valor p#change:hover {
+	cursor: pointer;
+	text-decoration: none;
+	transition: 0.3s;
+	color: var(--hover-color);
+}
+/* ------- /Fim estilização caixa do valor ------- */
+
+/* ----- Estilização dos botões ------ */
+button#firstbtn {
+	background: var(--brightblue-color);
+	border-style: none;
+	border-radius: 15px;
+	color: #ffffff;
+	width: 100%;	
+	font-size: 16px;
+	line-height: 50px;
+	margin: 20px 0px;
+	box-shadow: 0px 15px 10px #D6D4FF;
+	font-weight: bold;
+}
+
+button#firstbtn:hover {
+	cursor: pointer;
+	background: var(--hover-color);
+	transition: 0.3s;
+}
+
+button#secondbtn {
+	border-style: none;
+	color: var(--desaturatedblue-color);
+	background: none;
+	text-align: center;
+	width: 100%;
+	font-size: 16px;
+	margin: 10px 0px 30px 0px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+button#secondbtn:hover {
+	cursor: pointer;
+	color: var(--darkblue-color);
+}
+/* ----- /Fim estilização dos botões ------ */
+
+
+/* @Media 
+------------------ */
+@media screen and (min-width: 375px) and (max-width: 992px) {
+/* ----- Estilização dos @media ------ */
+	body {
+	background: hsl(225, 100%, 94%) url('imagens/background-mobile.svg') no-repeat;
+	}
+
+/* ----- /Fim Estilização dos botões ------ */
+}
+
+
